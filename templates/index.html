@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Typing Speed Test for Coders</h1>
+    <div class="exercise" id="exercise"></div>
+    <textarea id="typingArea" placeholder="Start typing the code above..."></textarea>
+    <button id="submitBtn">Submit</button>
+
+    <div class="stats">
+        <p>Accuracy: <span id="accuracy">-</span>%</p>
+        <p>Words per Minute (WPM): <span id="wpm">-</span></p>
+        <p>Errors: <span id="errors">-</span></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"> </script> 
+</body>
+</html>

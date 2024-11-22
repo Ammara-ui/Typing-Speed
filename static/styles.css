@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    background-color: #2d2d2d; /* Dark background */
+    color: #dcdcdc; /* Light text color */
+    font-family: 'Courier New', Courier, monospace; /* Code-style font */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    height: 120vh;
+}
+
+/* Main header */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Container for the exercise and input areas */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; /* Reduced width to 60% */
+    height: 80%; /* 80% of the viewport height for input and exercise */
+}
+
+/* Styling for the exercise box */
+.exercise {
+    background-color: #1e1e1e; /* Dark background for the exercise area */
+    color: #f8f8f8; /* Light text color */
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%; /* Full width of the container */
+    height: 40%; /* 40% of the container height */
+    border: 1px solid #444; /* Border around the exercise box */
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Preserves formatting */
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+/* Styling for the typing area */
+#typingArea {
+    background-color: #1e1e1e; /* Dark background for the exercise area */
+    color: #f8f8f8; /* Light text color */
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%; /* Full width of the container */
+    height: 40%; /* 40% of the container height */
+    border: 1px solid #444; /* Border around the exercise box */
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Preserves formatting */
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+/* Button styling */
+#submitBtn {
+    background-color: #333; /* Green background for the submit button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 71%; /* Full width to match input area */
+}
+
+#submitBtn:hover {
+    background-color: black; /* Darker green on hover */
+}
+
+/* Stats section - moved to 25% width of the screen */
+.stats {
+    color: #dcdcdc;
+    font-size: 1.2em;
+    background-color: #333; /* Dark background for the stats area */
+    padding: 20px;
+    border-radius: 8px;
+    width: 68%; /* Adjusted to 25% of the screen width */
+    border: 1px solid #444; /* Border around stats */
+}
+
+/* Individual stat */
+.stats p {
+    margin: 10px 0;
+}
+
+/* Make the stats look like compiler output */
+.stats p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+/* Styling for borders and layout */
+div {
+    border: 1px solid #444; /* Border around exercise and typing area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Specific margin and padding for the body elements */
+body > div {
+    margin: 20px;
+}
+
+/* Make sure everything fits inside the screen nicely */
+.container {
+    width: 100%; /* 60% width of the screen */
+    height: 80%; /* 80% of the screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
